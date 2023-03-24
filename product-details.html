@@ -1,0 +1,225 @@
+<!doctype html>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Demo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+
+
+</head>
+<body>
+<header>
+    <nav>
+        <div class="logo">
+            <a href="#"> <img src="asset/Neel.png" alt="Avatar"></a>
+        </div>
+        <div class="navbar">
+
+            <div class="container">
+                <form class="search">
+                    <input type="search" value="" placeholder="hãy tìm gì đó "/>
+                    <button><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="user">
+            <div class="dropdown dropbtn" id="Dropdown">
+                <img src="asset/User-avatar.svg.png" alt="Avatar">
+                <p>Thanh Phương</p>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Địa chỉ</a></li>
+                    <li><a href="#">Đơn hàng</a></li>
+                    <li><a href="#">Thay đổi mật khẩu</a></li>
+                    <li><a href="#">Đăng xuất</a></li>
+                </ul>
+            </div>
+            <div class="user-item">
+                <i class="fa-solid fa-cart-shopping fa-1x"></i>
+                <span>1</span>
+            </div>
+            <div class=user-item>
+                <i class="fa-solid fa-heart fa-1x"></i>
+                <span>1</span>
+            </div>
+        </div>
+    </nav>
+</header>
+<section>
+    <div class="container details">
+        <div class="carousel">
+            <div class="main-image">
+                <img id="main-image" src="asset/product/buffalo-ghee.png" alt="Main Image">
+            </div>
+
+            <div class="thumbnail-images">
+                <button class="prev-btn"><i class="fas fa-angle-left"></i></button>
+                <img class="thumbnail" data-src="asset/product/buffalo-ghee.png" src="asset/product/buffalo-ghee.png"
+                     alt="Thumbnail Image 1">
+                <img class="thumbnail" data-src="asset/product/cow-ghee.png" src="asset/product/cow-ghee.png"
+                     alt="Thumbnail Image 2">
+                <img class="thumbnail" data-src="asset/product/cow-milk.png" src="asset/product/cow-milk.png"
+                     alt="Thumbnail Image 3">
+                <img class="thumbnail" data-src="asset/product/curd-premium.png" src="asset/product/curd-premium.png"
+                     alt="Thumbnail Image 4">
+                <button class="next-btn"><i class="fas fa-angle-right"></i></button>
+            </div>
+        </div>
+        <div class="item">
+            <p class="product-name">Product name</p>
+            <div class="ratting">
+                <h3> Ratting 5.0/5</h3>
+                <div>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+            <div class="price">
+                <p>
+                    Giảm giá:8$/
+                    <del>Giá gốc:10$</del>
+                </p>
+            </div>
+            <div class="product-features">
+                <h1>Product Features</h1>
+                <p>est ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui
+                    faucibus in ornare quam viverra orci</p>
+            </div>
+            <div>
+                <button class="button-details view">Add to cart</button>
+                <button class="button-details buynow">Buy now</button>
+                <button class="button-wishlist add"><i class="fas fa-heart"></i></button>
+            </div>
+            <div class="comment">
+                <h1>Write you comment...</h1>
+                <div class="rating">
+                    <input type="radio" name="rating" value="5" id="5">
+                    <label for="5">☆</label>
+                    <input type="radio" name="rating" value="4" id="4">
+                    <label for="4">☆</label>
+                    <input type="radio" name="rating" value="3" id="3">
+                    <label for="3">☆</label>
+                    <input type="radio" name="rating" value="2" id="2">
+                    <label for="2">☆</label>
+                    <input type="radio" name="rating" value="1" id="1">
+                    <label for="1">☆</label>
+                </div>
+                <p>Description:</p>
+                <textarea placeholder="Hãy bình luận ở đây"></textarea>
+                <button>Gửi bình luận</button>
+            </div>
+        </div>
+    </div>
+    <div class="comment-render">
+        <h1>Comments (2):</h1>
+        <div class="comment-details">
+            <div class="comment-user">
+                <img src="asset/Neel.png"/>
+                <div>
+                    <h4>User Name</h4>
+                    <p>Comment details</p>
+                    <div class="ratting">
+                        <p> Ratting 5.0/5</p>
+                        <div>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button class="button-comment view" id="reply-comment" onclick="replyComment()">Trả lời</button>
+                <button class="button-comment remove">Xóa</button>
+            </div>
+        </div>
+        <div class="form form-reply" id="form">
+            <label>
+                <textarea placeholder="Hãy bình luận ở đây"></textarea>
+            </label>
+            <button>Gửi bình luận</button>
+        </div>
+        <div class="reply-comment comment-details">
+            <div class="comment-user">
+                <img src="asset/Neel.png"/>
+                <div>
+                    <h4>User Name</h4>
+                    <p>Comment details</p>
+                    <div class="ratting">
+                        <p> Ratting 5.0/5</p>
+                        <div>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button class="button-comment view" id="reply">Trả lời</button>
+                <button class="button-comment remove">Xóa</button>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="footer-left">
+        <img src="asset/Neel.png" alt="Logo">
+        <div class="info">
+            <i class="fas fa-map"></i>
+            <p>Địa chỉ: 123 Đường ABC, Quận XYZ, TP. Hồ Chí Minh</p>
+        </div>
+        <div class="info">
+            <i class="fas fa-phone"></i>
+            <p>Số điện thoại: 0123456789</p>
+        </div>
+        <div class="info">
+            <i class="fas fa-fax"></i>
+            <p>Số fax: 0123456789</p>
+        </div>
+        <div class="info">
+            <i class="fas fa-envelope"></i>
+            <p>Số điện thoại: 0123456789</p>
+        </div>
+    </div>
+    <div class="footer-middle">
+        <h3>Giới thiệu về chúng tôi</h3>
+        <p>Chúng tôi là một công ty chuyên cung cấp các sản phẩm chất lượng cao với giá cả phải chăng.</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423.9450030400263!2d106.62724619054615!3d10.853529795372872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175298a797a214b%3A0x47b4978a89981367!2sC%C3%B4ng%20ty%20TNHH%20HOPEE!5e0!3m2!1svi!2s!4v1679639703121!5m2!1svi!2s"
+                width="500" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="footer-right">
+        <h3>Liên hệ với chúng tôi</h3>
+        <form>
+            <label for="name">Họ và tên:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Nội dung:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Gửi</button>
+        </form>
+    </div>
+</footer>
+<footer>
+    <div class="coppy right ">
+        <p id="timenow"></p>
+    </div>
+
+</footer>
+<script src="comment.js"></script>
+<script src="main.js"></script>
+<script src="changeImage.js"></script>
+</body>
+</html>
