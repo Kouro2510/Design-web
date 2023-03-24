@@ -129,6 +129,10 @@ nav {
     border: 1px solid rgba(0,0,0,.125);
     border-radius: 5px;
 }
+.search button:hover{
+    background-color: #212529;
+    color: #ffffff;
+}
 section{
     flex: 1 0 auto;
 }
