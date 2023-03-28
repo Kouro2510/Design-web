@@ -6,7 +6,6 @@ thumbnails.forEach(function(thumbnail) {
     thumbnail.addEventListener('click', function() {
         // Lấy đường dẫn hình ảnh từ thuộc tính data-src của thumbnail
         var newImgSrc = this.getAttribute('data-src');
-
         // Thay đổi hình ảnh chính
         var mainImg = document.getElementById('main-image');
         mainImg.src = newImgSrc;
