@@ -64,7 +64,6 @@
         <div class="checkout-section">
             <h2>Thông tin sản phẩm</h2>
             <div class="product-item">
-
                 <div class="checkout-details">
                     <table>
                         <thead>
@@ -86,13 +85,40 @@
                             <td>2</td>
                             <td>20$</td>
                         </tr>
-
                         </tbody>
                     </table>
                 </div>
             </div>
         </div>
         <div class="checkout-section">
+            <div>
+                <div class="payment-options">
+                    <button class="btn-buy-now " id="payment">Mua trực tiếp</button>
+                    <button class="btn-card-payment "id="payment">Thanh toán bằng thẻ ngân hàng</button>
+                    <button class="btn-momo-payment "id="payment">Thanh toán bằng Momo</button>
+                </div>
+
+                <div class="payment-details">
+                    <div class="buy-now-details">
+                    </div>
+                    <div class="card-payment-details">
+                        <p>Chọn thẻ thanh toán</p>
+                        <ul>
+                            <li><a href="#">Thẻ Visa</a></li>
+                            <li><a href="#">Thẻ Mastercard</a></li>
+                            <li><a href="#">Thẻ ATM nội địa</a></li>
+                        </ul>
+                    </div>
+                    <div class="momo-payment-details">
+                        <p>Chọn ví thanh toán Momo</p>
+                        <ul>
+                            <li><a href="#">Ví Momo</a></li>
+                            <li><a href="#">Ví Moca</a></li>
+                            <li><a href="#">Ví ZaloPay</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
             <div class="shipping">
                 <div class="shipping-details">
                     <p>Phí vận chuyển:</p>
@@ -201,6 +227,7 @@
         <p id="timenow"></p>
     </div>
 </footer>
+<script src="payment.js"></script>
 <script src="modal.js"></script>
 <script src="plusminus.js"></script>
 <script src="main.js"></script>
