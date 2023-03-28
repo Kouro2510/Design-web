@@ -607,7 +607,7 @@ th {
 .comment-user p {
     margin-bottom: 10px;
 }
-
+/*checkout*/
 .checkout {
     background-color: #fdfdfd;
     height: 100vh;
@@ -787,7 +787,7 @@ th {
 .checkout-img img {
     width: 50%;
 }
-
+/*Modal*/
 .modal {
     display: none;
     position: fixed;
