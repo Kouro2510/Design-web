@@ -52,14 +52,14 @@
         <h2 class="title">Thông tin đơn hàng</h2>
         <div class="container-address address" id="open-modal">
             <div class="address-details">
-                <i class="fas fa-map-location fa-2x "></i>
+                <i class="fas fa-map-location-dot fa-2x "></i>
                 <div>
                     <p id="FullName">Tên : Lê Thanh Phương</p>
-                    <p id="Address">Địa chỉ:ABC, Phường XYZ, Quận BCD, TPHCM</p>
-                    <p id="Phone">SDT:09335248</p>
+                    <p id="Address">Địa chỉ: ABC, Phường XYZ, Quận BCD, TPHCM</p>
+                    <p id="Phone">SDT: 09335248</p>
                 </div>
             </div>
-            <button class="change-icons" ><i class="fas fa-2x fa-angle-right"></i></button>
+            <button class="change-icons"><i class="fas fa-2x fa-angle-right"></i></button>
         </div>
         <div class="checkout-section">
             <h2>Thông tin sản phẩm</h2>
@@ -125,7 +125,7 @@
                         </ul>
                     </div>
                     <div class="momo-payment-details">
-                        <p>Chọn ví thanh toán Momo</p>
+                        <p>Chọn ví thanh toán</p>
                         <ul>
                             <ul class="payment-card">
                                 <li class="card">
@@ -141,7 +141,7 @@
                                     <img src="asset/payment/payment.png"/>
                                 </li>
                                 <li class="card">
-                                    <label>Ví Moca
+                                    <label>Thẻ ATM nội địa
                                         <input type="radio" value="ATM" name="Card">
                                     </label>
                                     <img src="asset/payment/payment.png"/>
@@ -154,19 +154,19 @@
             <div class="shipping">
                 <div class="shipping-details">
                     <p>Phí vận chuyển:</p>
-                    <h3>20,000 VNĐ</h3>
+                    <h3>20$</h3>
                 </div>
                 <div class="shipping-details">
                     <p>Giá tiền:</p>
-                    <h3>20,000 VNĐ</h3>
+                    <h3>20$</h3>
                 </div>
                 <div class="shipping-details">
                     <p>Tổng tiền:</p>
-                    <h3>20,000 VNĐ</h3>
+                    <h3>20$</h3>
                 </div>
             </div>
         </div>
-        <button class="checkout-button">Thanh toán</button>
+        <button class="checkout-button" id="modal-payment">Thanh toán</button>
     </div>
 </section>
 <section>
@@ -175,42 +175,58 @@
             <div class="modal-header">
                 <span class="close">&times;</span>
             </div>
-            <div class="address" id="change-value">
-                <div class="address-details">
-                    <i class="fas fa-map-location fa-2x "></i>
-                    <div>
-                        <p class="Name">Tên : Lê Thanh Phương 1</p>
-                        <p class="Address">Địa chỉ:ABC, Phường XYZ, Quận BCD, TPHCM</p>
-                        <p class="Phone">SDT:09335248</p>
+            <button class="change-value">
+                <div class="address">
+                    <div class="address-details">
+                        <i class="fas fa-map-location-dot fa-2x "></i>
+                        <div class="address-change">
+                            <p class="Name">Tên : Lê Thanh Phương 1</p>
+                            <p class="Address">Địa chỉ: ABC, Phường XYZ, Quận BCD, TPHCM</p>
+                            <p class="Phone">SDT: 09335248</p>
+                        </div>
                     </div>
+                    <i class="fas fa-2x fa-angle-right icon"></i>
                 </div>
-                <button ><i class="fas fa-2x fa-angle-right"></i></button>
-            </div>
+            </button>
             <hr/>
-            <div class="address" id="change-value">
-                <div class="address-details">
-                    <i class="fas fa-map-location fa-2x "></i>
-                    <div>
-                        <p class="Name">Tên : Lê Thanh Phương 2</p>
-                        <p class="Address">Địa chỉ:ABC, Phường XYZ, Quận BCD, TPHCM</p>
-                        <p class="Phone">SDT:09335248</p>
+            <button class="change-value">
+                <div class="address">
+                    <div class="address-details">
+                        <i class="fas fa-map-location-dot fa-2x "></i>
+                        <div class="address-change">
+                            <p class="Name">Tên : Lê Thanh Phương 2</p>
+                            <p class="Address">Địa chỉ: ABC, Phường XYZ, Quận BCD, TPHCM</p>
+                            <p class="Phone">SDT: 09335248</p>
+                        </div>
                     </div>
+                    <i class="fas fa-2x fa-angle-right icon"></i>
                 </div>
-                <button ><i class="fas fa-2x fa-angle-right"></i></button>
-            </div>
+            </button>
             <hr/>
-            <div class="address" id="change-value">
-                <div class="address-details">
-                    <i class="fas fa-map-location fa-2x "></i>
-                    <div>
-                        <p class="Name">Tên : Lê Thanh Phương 3</p>
-                        <p class="Address">Địa chỉ:ABC, Phường XYZ, Quận BCD, TPHCM</p>
-                        <p class="Phone">SDT:09335248</p>
+            <button class="change-value">
+                <div class="address">
+                    <div class="address-details">
+                        <i class="fas fa-map-location-dot fa-2x "></i>
+                        <div class="address-change">
+                            <p class="Name">Tên : Lê Thanh Phương 3</p>
+                            <p class="Address">Địa chỉ: ABC, Phường XYZ, Quận BCD, TPHCM</p>
+                            <p class="Phone">SDT: 09335248</p>
+                        </div>
                     </div>
+                    <i class="fas fa-2x fa-angle-right icon"></i>
                 </div>
-                <button ><i class="fas fa-2x fa-angle-right"></i></button>
-            </div>
+            </button>
+
             <hr/>
+        </div>
+    </div>
+</section>
+<section>
+    <div id="payment-modal" class="modal">
+        <div class=" payment-content">
+            <iframe src="http://giphy.com/embed/ibolLe3mOqHE3PQTtk" width="200" height="200" frameborder="0" class="giphy-embed" allowFullScreen></iframe>
+            <p> Thanh toán thành công</p>
+            <button class="close-payment">close</button>
         </div>
     </div>
 </section>
@@ -261,6 +277,7 @@
 </footer>
 <script src="payment.js"></script>
 <script src="modal.js"></script>
+<script src="paymentmodal.js"></script>
 <script src="plusminus.js"></script>
 <script src="main.js"></script>
 <script src="changeImage.js"></script>
