@@ -90,12 +90,12 @@
                 </div>
             </div>
         </div>
-        <div class="checkout-section">
+        <div class="checkout-section payment">
             <div>
                 <div class="payment-options">
-                    <button class="btn-buy-now " id="payment">Mua trực tiếp</button>
-                    <button class="btn-card-payment "id="payment">Thanh toán bằng thẻ ngân hàng</button>
-                    <button class="btn-momo-payment "id="payment">Thanh toán bằng Momo</button>
+                    <button class="btn-buy-now active-checkout" id="payment">Mua trực tiếp</button>
+                    <button class="btn-card-payment " id="payment">Thanh toán bằng thẻ ngân hàng</button>
+                    <button class="btn-momo-payment " id="payment">Thanh toán bằng Momo</button>
                 </div>
 
                 <div class="payment-details">
@@ -103,18 +103,50 @@
                     </div>
                     <div class="card-payment-details">
                         <p>Chọn thẻ thanh toán</p>
-                        <ul>
-                            <li><a href="#">Thẻ Visa</a></li>
-                            <li><a href="#">Thẻ Mastercard</a></li>
-                            <li><a href="#">Thẻ ATM nội địa</a></li>
+                        <ul class="payment-card">
+                            <li class="card">
+                                <label>Thẻ Visa
+                                    <input type="radio" value="Visa" name="Card">
+                                </label>
+                                <img src="asset/payment/payment.png"/>
+                            </li>
+                            <li class="card">
+                                <label>Thẻ Mastercard
+                                    <input type="radio" value="Mastercard" name="Card">
+                                </label>
+                                <img src="asset/payment/payment.png"/>
+                            </li>
+                            <li class="card">
+                                <label>Thẻ ATM nội địa
+                                    <input type="radio" value="ATM" name="Card">
+                                </label>
+                                <img src="asset/payment/payment.png"/>
+                            </li>
                         </ul>
                     </div>
                     <div class="momo-payment-details">
                         <p>Chọn ví thanh toán Momo</p>
                         <ul>
-                            <li><a href="#">Ví Momo</a></li>
-                            <li><a href="#">Ví Moca</a></li>
-                            <li><a href="#">Ví ZaloPay</a></li>
+                            <ul class="payment-card">
+                                <li class="card">
+                                    <label>Ví Momo
+                                        <input type="radio" value="Visa" name="Card">
+                                    </label>
+                                    <img src="asset/payment/payment.png"/>
+                                </li>
+                                <li class="card">
+                                    <label>Ví Zalopay
+                                        <input type="radio" value="Mastercard" name="Card">
+                                    </label>
+                                    <img src="asset/payment/payment.png"/>
+                                </li>
+                                <li class="card">
+                                    <label>Ví Moca
+                                        <input type="radio" value="ATM" name="Card">
+                                    </label>
+                                    <img src="asset/payment/payment.png"/>
+                                </li>
+                            </ul>
                         </ul>
                     </div>
                 </div>

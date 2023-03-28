@@ -8,17 +8,23 @@ const momoPaymentDetails = document.querySelector('.momo-payment-details');
 
 btnBuyNow.addEventListener('click', () => {
     showDetails(buyNowDetails);
-    changeDetails();
+    btnBuyNow.classList.add('active-checkout')
+    btnCardPayment.classList.remove('active-checkout')
+    btnMomoPayment.classList.remove('active-checkout')
 });
 
 btnCardPayment.addEventListener('click', () => {
     showDetails(cardPaymentDetails);
-    changeDetails();
+    btnBuyNow.classList.remove('active-checkout')
+    btnCardPayment.classList.add('active-checkout')
+    btnMomoPayment.classList.remove('active-checkout')
 });
 
 btnMomoPayment.addEventListener('click', () => {
     showDetails(momoPaymentDetails);
-    changeDetails();
+    btnBuyNow.classList.remove('active-checkout')
+    btnCardPayment.classList.remove('active-checkout')
+    btnMomoPayment.classList.add('active-checkout')
 });
 
 function showDetails(details) {
@@ -27,12 +33,4 @@ function showDetails(details) {
         detail.classList.remove('active');
     });
     details.classList.add('active');
-}
-
-const changePayment = document.querySelectorAll('.payment-options > button')
-function changeDetails(details) {
-    changePayment.forEach(detail => {
-        detail.classList.remove('active-checkout');
-    });
-    details.classList.toggle('active-checkout');
 }
