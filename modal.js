@@ -8,7 +8,7 @@ const openModalBtn = document.getElementById("open-modal");
 const closeModalBtn = document.querySelector(".close");
 
 // Get the change value buttons in the modal
-const changeValueBtns = document.querySelectorAll("#change-value");
+const changeValueBtns = document.querySelectorAll(".address");
 
 // Get the elements to update in the original container
 const fullNameEl = document.getElementById("FullName");
@@ -23,9 +23,9 @@ function updateValues(name, address, phone) {
 }
 
 // Loop through each change value button in the modal
-changeValueBtns.forEach(function(btn) {
+changeValueBtns.forEach(function (btn) {
     // Add a click event listener to each button
-    btn.addEventListener("click", function() {
+    btn.addEventListener("click", function () {
         // Get the values from the corresponding address details
         const name = btn.parentNode.querySelector(".Name").textContent.trim();
         const address = btn.parentNode.querySelector(".Address").textContent.trim();
@@ -38,11 +38,16 @@ changeValueBtns.forEach(function(btn) {
 });
 
 // Open the modal when clicking the open modal button
-openModalBtn.addEventListener("click", function() {
+openModalBtn.addEventListener("click", function () {
     modal.style.display = "block";
 });
 
 // Close the modal when clicking the close button
-closeModalBtn.addEventListener("click", function() {
+closeModalBtn.addEventListener("click", function () {
     modal.style.display = "none";
 });
+window.onclick = function (event) {
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
+}
