@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <nav>
+        <div class="logo">
+            <a href="#"> <img src="asset/Neel.png" alt="Avatar"></a>
+        </div>
+        <div class="navbar">
+
+            <div class="container">
+                <form class="search">
+                    <input type="search" value="" placeholder="hãy tìm gì đó "/>
+                    <button><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="user">
+            <div class="dropdown dropbtn" id="Dropdown">
+                <img src="asset/User-avatar.svg.png" alt="Avatar">
+                <p>Thanh Phương</p>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Địa chỉ</a></li>
+                    <li><a href="#">Đơn hàng</a></li>
+                    <li><a href="#">Thay đổi mật khẩu</a></li>
+                    <li><a href="#">Đăng xuất</a></li>
+                </ul>
+            </div>
+            <div class="user-item">
+                <i class="fa-solid fa-cart-shopping fa-1x"></i>
+                <span>1</span>
+            </div>
+            <div class=user-item>
+                <i class="fa-solid fa-heart fa-1x"></i>
+                <span>1</span>
+            </div>
+        </div>
+    </nav>
+</header>
+<section>
+    <div class="container">
+        <img src="asset/Neel.png" alt="test"/>
+        <form>
+            <label>
+                Tên Tài Khoản:
+                <input type="text" placeholder="Tên tài khoản">
+            </label>
+            <label>
+                Mật khẩu:
+                <input type="password" placeholder="Mật khẩu">
+            </label>
+            <button type="submit">Đăng nhập</button>
+        </form>
+    </div>
+</section>
+<footer>
+    <div class="footer-left">
+        <img src="asset/Neel.png" alt="Logo">
+        <div class="info">
+            <i class="fas fa-map"></i>
+            <p>Địa chỉ: 123 Đường ABC, Quận XYZ, TP. Hồ Chí Minh</p>
+        </div>
+        <div class="info">
+            <i class="fas fa-phone"></i>
+            <p>Số điện thoại: 0123456789</p>
+        </div>
+        <div class="info">
+            <i class="fas fa-fax"></i>
+            <p>Số fax: 0123456789</p>
+        </div>
+        <div class="info">
+            <i class="fas fa-envelope"></i>
+            <p>Số điện thoại: 0123456789</p>
+        </div>
+    </div>
+    <div class="footer-middle">
+        <h3>Giới thiệu về chúng tôi</h3>
+        <p>Chúng tôi là một công ty chuyên cung cấp các sản phẩm chất lượng cao với giá cả phải chăng.</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423.9450030400263!2d106.62724619054615!3d10.853529795372872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175298a797a214b%3A0x47b4978a89981367!2sC%C3%B4ng%20ty%20TNHH%20HOPEE!5e0!3m2!1svi!2s!4v1679639703121!5m2!1svi!2s"
+                width="500" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="footer-right">
+        <h3>Liên hệ với chúng tôi</h3>
+        <form>
+            <label for="name">Họ và tên:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Nội dung:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Gửi</button>
+        </form>
+    </div>
+</footer>
+<footer>
+    <div class="coppy right ">
+        <p id="timenow"></p>
+    </div>
+
+</footer>
+</body>
+</html>
